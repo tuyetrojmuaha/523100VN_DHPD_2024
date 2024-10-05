@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    position: fixed; /* Đặt navbar ở vị trí cố định */
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    height: 80px;   
+    z-index: 1000;
+    border: none;
+    width: 100%;
+}
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black; /* Màu chữ trắng */
+}
+nav ul {
+    list-style-type: none;
+    margin: 50px;
+    padding: 40px;
+    
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.banner1{
+    width: 100%;
+    height: 86px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+.header .logo img {
+    height: 50px;
+}
+.header .logo .text {
+    margin-left: 10px;
+}
+.header .logo .text h1 {
+    margin: 0;
+    font-size: 18px;
+    color: #d32f2f;
+}
+.header .logo .text p {
+    margin: 0;
+    font-size: 12px;
+    color: #d32f2f;
+}
+.header .info {
+    text-align: right;
+}
+.header .info p {
+    margin: 0;
+    font-size: 12px;
+    color: #333;
+}
+.header .info p span {
+    color: #d32f2f;
+}
+.header .info .icons {
+    margin-top: 5px;
+}
+.header .info .icons i {
+    margin-left: 10px;
+    color: #d32f2f;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+.nav a:hover {
+    color: #d32f2f;
+}
+.nav a.active {
+    color: #d32f2f;
+    font-weight: bold;
+}
+.search-cart {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    padding: 10px 0;
+}
+.search-cart input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 200px;
+}
+.search-cart .icons {
+    margin-left: 10px;
+}
+.search-cart .icons i {
+    margin-left: 10px;
+    color: #333;
+}
+.main-image {
+    width: 100%;
+    height: auto;
+}
+.categories {
+    text-align: center;
+    padding: 20px 0;
+}
+.categories h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.categories .category {
+    display: inline-block;
+    width: 270px;
+    margin: 0 10px;
+    text-align: center;
+}
+.categories .category img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.categories .category p {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #333;
+}
+.header h2 {
+    color: #00aaff;
+    font-size: 18px;
+    margin: 0;
+}
+.header h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+.header button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.features {
+    display: flex;
+    flex-wrap: wrap;
+}
+.feature {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.feature img {
+    margin-bottom: 10px;
+    
+}
+.feature h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.feature p {
+    font-size: 14px;
+    color: #666;
+}
+.sale {
+    text-align: center;
+    margin-top: 40px;
+}
+.sale h2 {
+    color: #ff0000;
+    font-size: 20px;
+    margin: 0;
+}
+.sale p {
+    font-size: 15px;
+    color: #666;
+    font-style: italic;
+    font-weight: bold;
+}
+.chu{
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    text-transform: uppercase;
+}
+.chu1{
+    font-size: 20px;
+    font-weight: bolder;
+    color: red;
+    margin-top: 40px;
+}
+.gongkinh{
+    text-align: center;
+    margin-top: 40px;
+}
+.gongkinh h2 {
+    color: black;
+    font-size: 20px;
+    margin: 0;
+}
