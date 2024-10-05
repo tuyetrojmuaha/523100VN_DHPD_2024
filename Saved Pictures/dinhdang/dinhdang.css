@@ -1,0 +1,506 @@
+nav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: white ;
+}
+  
+  /* Navbar links */
+nav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.banner1{
+    width: 100%;
+    height: 100px;
+}
+
+.banner2{
+    width: 100%;
+    height: 500px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.danhmuc:hover{
+    cursor: pointer;
+}
+.danhmuc2{
+    width: 400px;
+}
+.tieude1{
+    color: rgb(0, 131, 238);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.tieude2{
+    font-weight: bolder;
+    font-size: 23px;
+    margin-top: 20px;
+}
+
+.nut1{
+    margin-top: 20px;
+    background-color: rgb(25, 192, 3);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.nut1:hover{    
+    cursor: pointer;
+}
+
+.anhdanhmuc2{
+    width: 363px;
+    height: 190px;
+}
+h2 {
+    width: 75%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    color: rgb(220,30,4);
+    font-weight: bolder;
+    font-size: 30px;
+ } 
+ 
+ h2 span { 
+     background:white ; 
+     padding:0 10px; 
+ }
+.gongkinh{
+    width: 75%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+}
+ .yahallo{
+    margin-top: 50px;
+    height: 150px;
+ }
+
+p{
+    font-style: italic;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.anhgongkinh{
+    width: 213px;
+    height: 213px;
+}
+
+.grid-container1{
+    margin-top: 50px;
+    width: 75%;
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: auto auto auto auto auto;
+    
+}
+
+.grid-item1{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    font-size: 30px;
+    width: 216px;
+    height: 325px;
+  }
+
+.tieudekinh{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.giatienkinh{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    margin-top: 20px;
+}
+
+
+.grid-container2{
+    margin-top: 50px;
+    width: 50%;
+    height: 400px;
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: auto auto auto;
+    
+}
+
+.grid-item2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    font-size: 30px;
+    width: 271px;
+    height: 376px;
+}
+
+.anhtrongkinh{
+    width: 270px;
+    height: 270px;
+}  
+
+.grid-container3{
+    margin-top: 20px;
+    width: 70%;
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    
+}
+.grid-item3 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 271px;
+    height: 75px;
+}
+.grid-item3:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 0 rgb(146, 144, 144);
+}
+.maunen{
+    margin-top: 20px;
+    background-color: #f7f7f7;
+}
+.khach{ 
+    font-weight: bolder;
+    font-size: 30px;
+    padding-top: 40px;
+}
+.sao{
+    font-size: 15px;
+}
+.tieudekhach{
+    margin-top: 5px;
+    font-size: 20px;
+}
+.ten{
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+.anhkhachhang{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.grid-container4{
+    margin-top: 50px;
+    width: 75%;
+    height: 400px;
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: auto auto auto;
+    
+}
+.ten a{
+    color: rgb(57, 57, 245);
+    font-weight: bold
+}
+
+footer{
+    background-color: rgb(56,52,52);
+}
+.footer1{
+    padding-top: 20px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+.footer2{
+    color: white ;
+    font-size: 20px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+}
+body{
+    background-color: white;
+}
+.luoi{
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+.chieurongluoi{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.hang{
+    display: flex;
+    flex-wrap: wrap;
+} 
+.cot{
+    padding-left:12px ;
+    padding-right: 12px;
+}
+.cot0{
+    display: none;
+}
+.cot1{
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 8.33333%; /*100% chia cho 12 cot*/
+    max-width: 8.33333%;
+}
+.cot2{
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+.cot3{
+    flex:0 0 25% ;
+    max-width: 25%;
+}
+.cot4{
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 33.33333%; 
+    max-width: 33.33333%;
+}
+.cot5{
+    flex:0 0 41.66667% ;
+    max-width: 41.66667%;
+}
+.cot6{
+    flex:0 0 50% ;
+    max-width: 50%;
+}
+.cot7{
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 58.33333%; 
+    max-width: 58.33333%;
+}
+.cot8{
+    flex:0 0 66.66667% ;
+    max-width: 66.66667%;
+}
+.cot9{
+    flex:0 0 75% ;
+    max-width: 75%;
+}
+.cot10{
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 83.33333%; 
+    max-width: 83.33333%;
+}
+.cot11{
+    flex:0 0 91.6% ;
+    max-width: 91.6%;
+}
+.cot12{
+    flex:0 0 100% ;
+    max-width: 100%;
+}
+@media (min-width:744px) and (max-width:1023px){
+    body{
+        background-color: white;
+    }
+    .luoi{
+        width: 100%;
+        display: block;
+    }
+    .chieurongluoi{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .hang{
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    .cot{
+        padding-left:8px ;
+        padding-right: 8px;
+    }
+    .maytinhbangcot0{
+        display: none;
+    }
+    .maytinhbangcot1{
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: 8.33333%; /*100% chia cho 12 cot*/
+        max-width: 8.33333%;
+    }
+    .maytinhbangcot2{
+        flex: 0 0 16.66667;
+        max-width: 16.66667%;
+    }
+    .maytinhbangcot3{
+        flex:0 0 25% ;
+        max-width: 25%;
+    }
+    .maytinhbangcot4{
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: 33.33333%; 
+        max-width: 33.33333%;
+    }
+    .maytinhbangcot5{
+        flex:0 0 41.66667% ;
+        max-width: 41.66667%;
+    }
+    .maytinhbangcot6{
+        flex:0 0 50% ;
+        max-width: 50%;
+    }
+    .maytinhbangcot7{
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: 58.33333%; 
+        max-width: 58.33333%;
+    }
+    .maytinhbangcot8{
+        flex:0 0 66.66667% ;
+        max-width: 66.66667%;
+    }
+    .maytinhbangcot9{
+        flex:0 0 75% ;
+        max-width: 75%;
+    }
+    .maytinhbangcot10{
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: 83.33333%; 
+        max-width: 83.33333%;
+    }
+    .maytinhbangcot11{
+        flex:0 0 91.6% ;
+        max-width: 91.6%;
+    }
+    .maytinhbangcot12{
+        flex:0 0 100% ;
+        max-width: 100%;
+    }
+}
+
+@media (max-width:734px){
+    body{
+        background-color: white;
+    }
+    .luoi{
+        width: 100%;
+        display: block;
+    }
+    .chieurongluoi{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .hang{
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    .cot{
+        padding-left:8px ;
+        padding-right: 8px;
+    }
+    .dienthoaicot0{
+        display: none;
+    }
+    .dienthoaicot1{
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: 8.33333%; /*100% chia cho 12 cot*/
+        max-width: 8.33333%;
+    }
+    .dienthoaicot2{
+        flex: 0 0 16.66667;
+        max-width: 16.66667%;
+    }
+    .dienthoaicot3{
+        flex:0 0 25% ;
+        max-width: 25%;
+    }
+    .dienthoaicot4{
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: 33.33333%; 
+        max-width: 33.33333%;
+    }
+    .dienthoaicot5{
+        flex:0 0 41.66667% ;
+        max-width: 41.66667%;
+    }
+    .dienthoaicot6{
+        flex:0 0 50% ;
+        max-width: 50%;
+    }
+    .dienthoaicot7{
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: 58.33333%; 
+        max-width: 58.33333%;
+    }
+    .dienthoaicot8{
+        flex:0 0 66.66667% ;
+        max-width: 66.66667%;
+    }
+    .dienthoaicot9{
+        flex:0 0 75% ;
+        max-width: 75%;
+    }
+    .dienthoaicot10{
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: 83.33333%; 
+        max-width: 83.33333%;
+    }
+    .dienthoaicot11{
+        flex:0 0 91.6% ;
+        max-width: 91.6%;
+    }
+    .dienthoaicot12{
+        flex:0 0 100% ;
+        max-width: 100%;
+    }
+}
