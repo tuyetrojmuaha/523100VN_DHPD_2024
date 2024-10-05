@@ -1,0 +1,120 @@
+
+    body{
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .menu a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        .navbar .menu a:hover {
+            color: #007bff;
+        }
+        .navbar .right-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .navbar .search input {
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .navbar .icon {
+            position: relative;
+        }
+        .navbar .icon img {
+            width: 24px;
+            height: 24px;
+        }
+        .navbar .icon .notification {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: red;
+            color: white;
+            font-size: 12px;
+            padding: 2px 6px;
+            border-radius: 50%;
+        }
+        .container {
+            display: flex;
+            justify-content: center
+        }
+         
+        .why-choose {
+            display: grid;
+            text-align: center;
+            margin: 40px auto;
+            
+            max-width: 1200px;
+        }
+        
+        .why-title {
+            margin-bottom: 20px;
+        }
+        
+        .why-title h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .cta-button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            background-color: #218838;
+        }
+        
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Tạo các cột tùy theo độ rộng */
+            gap: 20px; /* Khoảng cách giữa các phần tử */
+            margin-top: 20px;
+        }
+        
+        .why-item {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .why-item img {
+            width: 60px;
+            margin-bottom: 10px;
+        }
+        
+        .why-item h4 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .why-item p {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        
+        
+    }  
