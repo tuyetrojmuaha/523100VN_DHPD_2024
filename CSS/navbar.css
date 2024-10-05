@@ -1,0 +1,57 @@
+.dropdown-menu {
+    background-color: #ffffff; /* Màu nền của dropdown menu */
+}
+
+.dropdown-item:hover {
+    background-color:#eeeeee; /* Màu nền khi di chuột qua */
+    color:  #f8f9fa; /* Màu chữ khi di chuột qua */
+}
+.image-container {
+    background-color: #f0f0f0; /* Màu nền bạn muốn */
+    padding: 20px; /* Khoảng cách giữa ảnh và viền */
+    border-radius: 10px; /* Bo tròn các góc nếu muốn */
+    display: inline-block; /* Giữ ảnh và nền vừa khít */
+}
+
+.why-choose {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.why-choose h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.why-choose button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.why-choose .card {
+    border: none;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.why-choose .card:hover {
+    transform: translateY(-10px);
+}
+
+.why-choose .card img {
+    max-width: 100%;
+}
+
+.why-choose .card-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.why-choose .card-text {
+    color: #666;
+    font-size: 1rem;
+}
