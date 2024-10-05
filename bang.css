@@ -1,0 +1,415 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Section */
+.header-top {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 250px; /* Độ rộng của logo */
+    height: auto;
+}
+
+.clinic-name h1 {
+    font-size: 1.2rem; /* Giảm kích thước tên phòng khám */
+    color: #167add;
+    text-align: left;
+    white-space: nowrap; /* Đảm bảo tên không bị ngắt dòng */
+}
+
+.working-hours p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.working-time {
+    color: red; /* Dòng thứ hai có màu đỏ */
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    align-items: center; /* Căn giữa dọc */
+    border-bottom: 1px solid #ddd;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    color: #d32f2f;
+}
+
+.nav a.active {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+/* Search Cart */
+.search-cart {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.search-cart input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 200px;
+    margin-left: 20px; /* Thay đổi khoảng cách */
+}
+
+.search-cart .icons {
+    display: flex;
+    align-items: center; /* Căn giữa dọc cho biểu tượng */
+    margin-left: 10px; /* Khoảng cách giữa ô tìm kiếm và biểu tượng */
+}
+
+.search-cart .icons i {
+    margin-left: 10px;
+    color: #333;
+}
+
+/* Main Image */
+.main-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Categories */
+.categories {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.categories h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.categories .category {
+    display: inline-block;
+    width: 270px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.categories .category img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.categories .category p {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #333;
+}
+
+
+
+.cart-section {
+    text-align: center; /* Căn giữa nội dung */
+    margin: 20px 0; /* Khoảng cách trên và dưới */
+}
+
+.cart-title {
+    font-size: 24px; /* Kích thước chữ tiêu đề */
+    color: red; /* Màu chữ tiêu đề */
+}
+
+.cart-items {
+    display: flex; /* Sử dụng flexbox để căn đều các ô */
+    justify-content: space-between; /* Căn đều khoảng cách giữa các ô */
+    flex-wrap: wrap; /* Cho phép các ô xuống dòng nếu cần */
+    padding: 20px 5%; /* Thêm khoảng cách cho ô */
+}
+
+.cart-item {
+    flex: 1 1 calc(20% - 20px); /* Mỗi ô chiếm 20% chiều rộng trừ đi khoảng cách */
+    text-align: center; /* Căn giữa nội dung trong ô */
+    margin: 10px; /* Khoảng cách giữa các ô */
+}
+
+.cart-item img {
+    width: 100%; /* Chiều rộng bằng 100% của ô chứa */
+    max-height: 150px; /* Giới hạn chiều cao tối đa cho ảnh */
+    object-fit: cover; /* Đảm bảo ảnh không bị biến dạng */
+}
+
+.item-price {
+    font-weight: bold; /* Đậm cho giá */
+    color: green; /* Màu chữ cho giá */
+}
+
+
+
+
+
+
+
+/* Header Text */
+.header h2 {
+    color: #00aaff;
+    font-size: 18px;
+    margin: 0;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.header button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Features Section */
+.why-choose-section {
+    display: flex; /* Sử dụng flexbox để căn đều các ô */
+    justify-content: space-between; /* Căn đều khoảng cách giữa các ô */
+    align-items: flex-start; /* Căn đều chiều cao cho các ô */
+    padding: 20px 10%; /* Khoảng cách trên và dưới */
+    margin: 20px 0; /* Khoảng cách giữa dòng 6 và 7 */
+}
+
+.column {
+    flex: 1; /* Chiếm không gian đồng đều */
+    text-align: center; /* Căn giữa nội dung */
+    padding: 20px; /* Thêm khoảng cách cho ô */
+    border: 1px solid #ddd; /* Đường viền cho ô (tùy chọn) */
+    border-radius: 5px; /* Bo góc cho ô (tùy chọn) */
+    background-color: #f9f9f9; /* Màu nền cho ô (tùy chọn) */
+    margin: 0 10px; /* Khoảng cách giữa các ô */
+}
+
+.column img {
+    width: 100%; /* Chiều rộng bằng 100% của ô chứa */
+    max-height: 150px; /* Giới hạn chiều cao tối đa cho ảnh */
+    object-fit: cover; /* Đảm bảo ảnh không bị biến dạng */
+}
+
+.conn {
+    text-align: center;
+}
+
+.btn {
+    background-color: rgb(128, 236, 128); /* Màu xanh */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(128, 236, 128); /* Màu xanh tối hơn khi hover */
+}
+
+.image-row {
+    display: flex; /* Sử dụng flexbox để căn đều các ô ảnh */
+    justify-content: space-between; /* Căn đều khoảng cách giữa các ô */
+    padding: 20px 10%; /* Khoảng cách trên và dưới */
+}
+
+
+
+
+
+
+
+
+.image-gallery {
+    display: flex; /* Sử dụng flexbox để căn hàng */
+    justify-content: flex-start; /* Dịch các ảnh sang bên trái */
+    margin: 10px 0; /* Khoảng cách trên và dưới */
+}
+
+.gallery-image {
+    width: calc(33.33%); /* Chiều rộng của mỗi ảnh (chiếm 1/3 chiều rộng của container) */
+    height: auto; /* Giữ tỷ lệ ảnh */
+}
+
+.gallery-image:last-child {
+    margin-right: 0; /* Không có khoảng cách bên phải cho ảnh cuối */
+}
+
+
+
+
+
+
+/* Sale Section */
+.sale {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.sale h2 {
+    color: #ff0000;
+    font-size: 20px;
+    margin: 0;
+}
+
+.sale p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.gongkinh{
+    text-align: center;
+    margin-top: 30px;
+}
+.gongkinh h2 {
+    color:black;
+    font-size: 30px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tintucvasukien{
+    text-align: center;
+    margin-top: 30px;
+}
+.tintucvasukien h2 {
+    color:black;
+    font-size: 30px;
+    margin: 0;
+}
+.con {
+    text-align: center;
+}
+
+.btn {
+    background-color: green; /* Màu xanh */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: green; /* Màu xanh tối hơn khi hover */
+}
+
+
+
+
+
+
+
+.danhgiakhachhang{
+    text-align: center;
+    margin-top: 30px;
+}
+.danhgiakhachhang h2 {
+    color:black;
+    font-size: 30px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+.footer {
+    display: flex; /* Sử dụng flexbox để tạo cột */
+    justify-content: space-between; /* Cách đều giữa các cột */
+    padding: 20px; /* Thêm khoảng cách bên trong */
+    background-color: #f8f8f8; /* Màu nền cho footer */
+    border-top: 1px solid #ccc; /* Viền trên cho footer */
+}
+
+.footer-column {
+    flex: 1; /* Các cột có cùng kích thước */
+    margin: 0 10px; /* Khoảng cách bên trái và bên phải */
+}
+
+.footer-column h4 {
+    font-size: 20px; /* Kích thước chữ cho tiêu đề cột */
+    margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+}
+
+.footer-column p,
+.footer-column ul {
+    font-size: 16px; /* Kích thước chữ cho nội dung */
+    margin: 5px 0; /* Khoảng cách giữa các mục */
+}
+
+.footer-column ul {
+    list-style-type: none; /* Loại bỏ dấu chấm trước các mục */
+    padding: 0; /* Xóa khoảng cách bên trong */
+}
