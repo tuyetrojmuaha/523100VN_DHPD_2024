@@ -1,0 +1,337 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+.header .logo img {
+    height: 80px;
+    width: 280px;
+}
+.header .logo .text {
+    margin-left: 10px;
+}
+.header .logo .text h1 {
+    margin: 0;
+    font-size: 18px;
+    color: #d32f2f;
+}
+.header .logo .text p {
+    margin: 0;
+    font-size: 12px;
+    color: #d32f2f;
+}
+.header .info {
+    text-align: right;
+}
+.header .info p {
+    margin: 0;
+    font-size: 12px;
+    color: #333;
+}
+.header .info p span {
+    color: #d32f2f;
+}
+.header .info .icons {
+    margin-top: 5px;
+}
+.header .info .icons i {
+    margin-left: 10px;
+    color: #d32f2f;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+.nav a:hover {
+    color: #d32f2f;
+}
+.nav a.active {
+    color: #d32f2f;
+    font-weight: bold;
+}
+.search-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.search-cart input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 200px;
+}
+.search-cart .icons {
+    margin-left: 10px;
+}
+.search-cart .icons i {
+    margin-left: 10px;
+    color: #333;
+}
+.main-image {
+    width: 100%;
+    height: auto;
+}
+.categories {
+    text-align: center;
+    padding: 20px 0;
+}
+.categories h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.categories .category {
+    display: inline-block;
+    width: 270px;
+    margin: 0 10px;
+    text-align: center;
+}
+.categories .category img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.categories .category p {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #333;
+}
+.header h2 {
+    color: #00aaff;
+    font-size: 18px;
+    margin: 0;
+}
+.header h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+.header button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.feature {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.feature img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.feature h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.feature p {
+    font-size: 14px;
+    color: #666;
+}
+.sale {
+    text-align: center;
+    margin-top: 40px;
+}
+.sale h2 {
+    color: #ff0000;
+    font-size: 20px;
+    margin: 0;
+}
+.sale p {
+    font-size: 14px;
+    color: #666;
+}
+h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product-item {
+    width: 23%;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+.product-item img {
+    width: 50%;
+    height: auto;
+}
+.product-title {
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.product-price {
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+}
+.product-item p {
+    font-size: 14px;
+    color: red;
+    font-weight: bold;
+}
+.product-item h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.product-item1 img {
+    width: 40%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+.product-item1 {
+    width: 30%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    position: relative;
+}
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    margin: 10px auto 0;
+}
+.section-subtitle {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.section-subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.news-items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.news-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 23%;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+.view-all-button {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.reviews-section {
+    text-align: center;
+    margin-top: 40px;
+}
+.reviews {
+    display: flex;
+    justify-content: space-between;
+}
+.review {
+    width: 30%;
+    text-align: center;
+}
+.review img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.review .stars {
+    color: #FFD700;
+    margin: 10px 0;
+}
+.review p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.review .name {
+    font-weight: bold;
+    color: #007BFF;
+}
+.review .role {
+    color: #666;
+}
