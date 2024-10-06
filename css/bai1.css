@@ -1,0 +1,230 @@
+body{
+    background-color: white;
+}
+.mauchu{
+color: rgb(12, 241, 43);
+text-align: center;
+}
+.mauchu1{
+    color: rgb(18, 222, 45);
+
+}
+.mauchu2{
+    color: rgb(5, 3, 4);
+}
+.table1 {
+    border-collapse: collapse;
+    width: 100%;
+}
+.table1 th,.table td {
+    border: 1px solid white;
+    padding: 20px; /* Khoảng cách bên trong ô */
+    text-align: center; /* Căn giữa nội dung */
+    vertical-align: middle; /* Căn giữa theo chiều dọc */
+    height: 100px; /* Chiều cao cố định cho các ô */
+}
+.box-menu {
+    background-color: rgb(231, 19, 19);
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgb(226, 162, 162); /* Thêm bóng để tạo độ sâu */
+}
+
+.box-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.box-menu ul li {
+    margin: 0 15px;
+    padding: 15px;
+    position: relative;
+}
+
+.box-menu ul li a {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Đổi màu hover để không trùng với nền */
+.box-menu ul li:hover a {
+    color:#20ef31; /* Màu nhạt hơn cho contrast */
+}
+
+.box-submenu {
+    display: none;
+}
+
+.box-menu ul li:hover .box-submenu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.box-submenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.box-submenu ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc; /* Sử dụng màu xám cho viền */
+}
+
+.box-submenu ul li:last-child {
+    border-bottom: none;
+}
+
+/* Đổi màu cho menu con để dễ đọc hơn */
+.box-submenu ul li a {
+    color: #FF6666; /* Đổi thành màu đậm hơn */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.box-submenu ul li:hover a {
+    color: #333; /* Màu đậm hơn khi hover */
+}
+
+.cart {
+    float: right;
+    color: white;
+    padding: 14px 20px;
+    background-color:  rgb(240, 118, 179);
+    padding: 10px 0;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.mauchu3{
+    text-align: center;
+    color: rgb(238, 243, 239);
+    background-color: rgb(226, 21, 21);
+}
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.photo {
+    position: relative;
+    margin: 10px;
+    text-align: center;
+}
+.img {
+    width: 300px; /* Thay đổi kích thước ảnh nếu cần */
+    height: auto;
+    border-radius: 8px;
+}
+.caption {
+    position: absolute;
+    top: 50%; /* Đặt chữ ở giữa ảnh */
+    left: 50%; /* Căn giữa */
+    transform: translate(-50%, -50%); /* Dịch chuyển để căn chính giữa */
+    color: rgb(197, 9, 65); /* Màu chữ */
+    font-size: 1.5em; /* Kích thước chữ */
+    background-color: rgba(255, 220, 220, 0.7); /* Nền tối hơn */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center; /* Căn giữa chữ */
+}
+.chu{
+    letter-spacing: 3px;
+    text-decoration: underline;
+    color: rgb(12, 250, 107);
+}
+.table2 {
+    width: 100%; /* Chiều rộng của bảng */
+    border-collapse: collapse; /* Xóa khoảng cách giữa các ô */
+    margin: 20px auto; /* Căn giữa bảng */
+}
+.table2 th,.table2 td {
+    border: 3px solid white; /* Đường viền của ô */
+    padding: 15px; /* Khoảng cách trong ô */
+    text-align: center; /* Căn giữa nội dung */
+    letter-spacing: 2px; /* Khoảng cách giữa các chữ */
+    height: 100px; /* Chiều cao cố định cho các ô */
+    width: 33.33%; /* Đặt chiều rộng cho các ô đều nhau */
+    box-shadow: 2px 2px 5px rgba(158, 15, 15, 0.3); /* Đổ bóng cho ô */
+}
+.chu4{
+    text-align: center;
+    color: red;
+}
+.chu1{
+    text-align: center;
+    color: rgb(239, 249, 244);
+}
+.chu2{
+    text-align: center;
+    color: rgb(0, 255, 72);
+}
+.table3 {
+    width: 100%; /* Chiều rộng của bảng */
+    border-collapse: collapse; /* Xóa khoảng cách giữa các ô */
+    margin: 20px auto; /* Căn giữa bảng */
+}
+.table3 th,.table3 td {
+    border: 3px solid white; /* Đường viền của ô */
+    padding: 15px; /* Khoảng cách trong ô */
+    text-align: center; /* Căn giữa nội dung */
+    letter-spacing: 2px; /* Khoảng cách giữa các chữ */
+    height: 100px; /* Chiều cao cố định cho các ô */
+    width: 25%; /* Đặt chiều rộng cho các ô đều nhau */
+    box-shadow: 2px 2px 5px rgba(158, 15, 15, 0.3); /* Đổ bóng cho ô */
+}
+.nen{
+    background-color: rgb(224, 21, 21);
+}
+.container {
+    border-top: 2px solid gray;
+    margin-top: 30px; /* Cách một chút với phần trên */
+    padding: 20px; /* Khoảng cách bên trong */
+}
+
+.row {
+    display: flex; /* Sử dụng Flexbox để dễ dàng căn giữa và sắp xếp */
+    justify-content: space-between; /* Tạo khoảng cách giữa các cột */
+}
+
+.col-4, .col-2, .col-3 {
+    padding: 15px; /* Khoảng cách giữa các cột */
+}
+
+h4 {
+    color: royalblue; /* Màu chữ tiêu đề */
+    margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+}
+
+p {
+    margin: 5px 0; /* Khoảng cách giữa các đoạn văn */
+}
+
+/* Thêm màu nền và một số kiểu cho phần "Mạng xã hội" */
+.col-3:last-child {
+    background-color: #f0f8ff; /* Màu nền nhạt */
+    padding: 15px; /* Padding cho phần này */
+    border-radius: 5px; /* Bo tròn góc */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Chuyển thành cột trên màn hình nhỏ */
+    }
+}
+.nen2{
+background-color: rgb(216, 26, 26);
+}
