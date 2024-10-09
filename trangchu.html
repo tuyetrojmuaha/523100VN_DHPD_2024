@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phòng Khám Mắt Việt Nhật</title>
+    <link rel="stylesheet" href="css/dinhdang.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+        .search-input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 150px;
+            margin-right: 10px;
+        }
+        .submit-button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #00ffb7;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;}
+        .search-button {
+            padding: 5px 10px;
+            font-size: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-button:hover {
+            background-color: #0056b3;
+        }
+        .slideshow-container {
+          position: relative;
+          max-width: 1000%;
+          overflow: hidden;
+          margin: 70px; /* Thiết lập khoảng cách giữa các hình ảnh */
+          height:auto;
+          width:;
+      }
+
+      .slide {
+          display: none;
+          width: 100%;
+          
+      }
+
+      .active {
+          display: block;
+      }
+
+      @keyframes fade {
+          from { opacity: 0; }
+          to { opacity: 1; }
+      }
+
+      .fade {
+          animation: fade 1s ease-in-out;
+      }
+      .image-container {
+            position: relative;
+            display: inline-block; /* Để có thể sử dụng position absolute cho overlay */
+            margin: 20px; /* Khoảng cách giữa các ảnh */
+        }
+
+        .image-container img {
+            width: 300px; /* Kích thước ảnh */
+            height: auto; /* Giữ tỷ lệ khung hình */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7); /* Nền mờ */
+            color: white; /* Màu chữ */
+            display: flex;
+            align-items: center; /* Căn giữa chữ theo chiều dọc */
+            justify-content: center; /* Căn giữa chữ theo chiều ngang */
+            opacity: 0; /* Bắt đầu với độ mờ */
+            transition: opacity 0.3s; /* Hiệu ứng chuyển đổi */
+        }
+
+        .image-container:hover .overlay {
+
+            opacity: 1; /* Hiện chữ khi hover */}
+            .line-container {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .line {
+            flex-grow: 1;
+            border-bottom: 1px solid #000; /* Đường kẻ dưới */
+            margin: 0 10px;
+        }
+        .line-above {
+            border-top: 1px solid #000; /* Đường kẻ trên */
+            position: relative;
+            top: -1px; /* Đưa đường kẻ trên gần chữ hơn */
+        }
+        .line-text {
+            padding: 0 10px; /* Khoảng cách giữa chữ và dòng kẻ */
+            white-space: nowrap; /* Đảm bảo chữ không bị xuống dòng */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <table border="0" width="100%" align="center">
+            <tr>
+                <th><img src="media/anh6.jpg" width="250px" height="150px"></th>
+                <th><p class="chu1">Phòng Khám Mắt Việt Nhật</p></th>
+                <th>
+                    <p class="chu2">Thời gian làm việc</p>
+                    <p>Thứ 2 - CN: 7:30 - 21:30</p>
+                </th>
+                <th>
+                    <p class="chu2">Hotline</p>
+                    <p>092482932</p>
+                </th>
+            </tr>
+        </table>
+    </header>
+
+    <nav class="box-menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Giới thiệu</a></li>
+            <li>
+                <a href="">Sản phẩm</a>
+                <div class="box-submenu">
+                    <ul>
+                        <li><img src="media/anh1.jpg" width="100px" height="100px">
+                            
+                        </li>
+                        <li><a href="">Trọng kính</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="">Dịch vụ</a>
+                <div class="box-submenu">
+                    <ul>
+                        <li><a href="#">Đo mắt kính</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="">Tin tức</a>
+                <div class="box-submenu">
+                    <ul>
+                        <li><a href="">Tin hoạt động</a></li>
+                        <li><a href="">Khuyến mãi</a></li>
+                        <li><a href="">Kiến thức nhãn khoa</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="">Liên hệ</a></li>
+            <li>
+                <div class="search-container">
+                    <form action="/search" method="GET">
+                        <input type="text" class="search-input" placeholder="Tìm kiếm...." name="query" required> <button type="submit" class="search-button">Tìm</button>
+                    </form>
+                </div>
+            </li>
+            <li>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="17" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+<img src="media/anh4.png" width="1490px" height="400px">
+<p class="chu3">Danh Mục Nổi Bật</p>
+<table border="4" width="100%" align="center">
+   
+    <tr>
+      <th>
+          <div class="image-container">
+              <a href="">
+                  <img src="media/anh1.jpg" alt="Product Image 1" >
+                  <div class="overlay">xem thêm</div>
+              </a>
+          </div>
+      </th>
+      <th>
+          <div class="image-container">
+              <a href="">
+                  <img src="media/anh2.png" alt="Product Image 2" >
+                  <div class="overlay">xem thêm</div>
+              </a>
+          </div>
+      </th>
+      <th>
+          <div class="image-container">
+              <a href="">
+                  <img src="media/anh3.png" alt="Product Image 3" >
+                  <div class="overlay">xem thêm</div>
+              </a>
+          </div>
+      </th>
+      <th>
+          <div class="image-container">
+              <a href="">
+                  <img src="media/anh5.jpg" alt="Product Image 4" >
+                  <div class="overlay">xem thêm</div>
+              </a>
+          </div>
+      </th>
+  </tr>
+  </table>
+  <table border="3" width="70%" align="center">
+    <tr>
+      <th>
+        <p class="chu4"> Why choose</p>
+        <p class="chu5">Vì sao lại chọn kính mắt Việt Nhật</p> 
+        <a href="thu.html"><button class="submit-button" onclick="redirectToUrl()"><p class="chu2">Xem chi tiết</p></button></a>
+        </th>
+      <th>
+        <img src="media/anh8.jpg"width="300px" height="150px">
+        <p class="chu7">Kính mắt chất lượng</p> 
+        <p class="chu6">Đa dạng của sản phẩm Kính mắt thương hiệu</p>
+      </th>
+      <th>
+        <img src="media/anh9.jpg"width="300px" height="150px">
+        <p class="chu7">Chi phí hợp lý</p> 
+        <p class="chu6">Giá cả kính mắt phù hợp,nhiều ưu đãi lớn</p>
+      </th>
+      </tr>
+      <tr>
+      <th>
+        <img src="media/anh10.jpg"width="300px" height="150px">
+        <p class="chu7">Thiết bị tiên tiến</p> 
+        <p class="chu6">Sử dụng thiết bị đo hiện đại,đo khám mắt chính xác</p>
+      </th>
+
+    <th>
+        <img src="media/anh11.jpg"width="300px" height="150px">
+        <p class="chu7">Kiểm tra mắt miễn phí</p> 
+        <p class="chu6">Đội ngũ bác sĩ chuyên khoa có trình độ chuyên môn cao.</p>
+      </th>
+      <th>
+        <img src="media/anh8.jpg"width="300px" height="150px">
+        <p class="chu7">Nhân viên Nhiệt tình</p> 
+        <p class="chu6">Sử dụng trang thiết bị hiện đại, đo khám mắt chính xác.</p>
+      </th>
+      </tr>
+  </table>
+  <div class="line-container">
+    <div class="line"></div>
+    <span class="line-text"><p class="chu3">Sản phẩm sale</p></span>
+    <div class="line"></div>
+</div>
+<p class="chu8">Tổng hợp những sản phẩm gọng kính & tròng kính mới nhất của Việt Nhật</p>
+<div class="line-container">
+    <div class="line"></div>
+    <span class="line-text"><p class="chu3">Gọng Kính</p></span>
+    <div class="line"></div>
+</div>
+<div class="line-container"></div>
+    <div class="line"></div>
+    <span class="line-text"></span>
+    <div class="line"></div>
+</div>
+
+</html>
