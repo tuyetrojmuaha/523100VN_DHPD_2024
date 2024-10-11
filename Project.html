@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <style>
+        .hover-div{
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        .hover-div:hover{
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+        }
+        .card-img-top {
+             opacity: 0.8;
+            transition: opacity 0.3s ease;
+            }
+
+        .card:hover .card-img-top {
+            opacity: 1;
+        }
+        #comment {
+    width: 1012px;
+    height: 478px;
+    margin:0px auto;
+    margin-top:184px;
+    margin-bottom: 50px;
+}
+
+#comment h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size:32px;
+    color:#626a67;
+}
+
+
+#comment-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 400px;
+    list-style: none;
+    overflow: hidden;
+}
+
+#list-comment {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    transition:0.5s;
+}
+
+#list-comment .item {
+    width: 100%;
+    height: 100%;
+    background:#362f2f;
+    border-radius: 20px;
+    padding-top:50px;
+}
+
+#list-comment .item .avatar {
+    text-align: center;
+    margin-top:13px;
+}
+
+#list-comment .item .stars {
+    display: flex;
+    margin:0px auto;
+    width: 50%;
+    margin-top:32px;
+    justify-content: center;
+    align-items: center;
+}
+
+#list-comment .item .name {
+    text-align: center;
+    font-weight: bold;
+    color:#fff;
+}
+
+#list-comment .item .text-cmt {
+    padding:20px 50px;
+    color:#fff;
+   
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3"><img src="Media/LOGO-VN-164x45-2-01.png"></div>
+            <div class="col-3"><img src="Media/Screenshot 2024-10-11 194431.png"></div>
+            <div class="col-3"><img src="Media/Screenshot 2024-10-11 194510.png"></div>
+            <div class="col-3"><img src="Media/Screenshot 2024-10-11 194531.png"></div>
+        </div>
+    </div>  
+    <nav class="navbar navbar-expand-xxl sticky-top" style="background-color:ghostwhite;">
+        <div class="container">
+                <ul class="navbar-nav mx-2" style="font-weight:bold;">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#" >HOME</a> 
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#" style="font-weight:bold;">GIỚI THIỆU</a> 
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">SẢN PHẨM</a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">GỌNG KÍNH</a></li>
+                        <li><a class="dropdown-item" href="#">TRÒNG KÍNH</a></li>
+                        <li><a class="dropdown-item" href="#">KÍNH MẮT</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">DỊCH VỤ</a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Đo mắt miễn phí</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">TIN TỨC</a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Trang hoạt động</a></li>
+                        <li><a class="dropdown-item" href="#">Khuyến mãi</a></li>
+                        <li><a class="dropdown-item" href="#">Kiến thức nhãn khoa</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Liên Hệ</a> 
+                    </li> 
+                    </ul>
+                    <form class="d-flex" style="width: 500px;">
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" class="form-control" placeholder="Tìm kiếm...">
+                            <button type="button" class="input-group-text"><i class="fa-solid fa-user"></i></button>
+                            <button type="button" class="input-group-text"><i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </form>              
+            </div>      
+    </nav>
+    <div class="container">
+        <img src="Media/Banner-Website-01.jpg" width="1300px">
+    </div>
+    <h4 style="font-weight: bold; text-align: center;" class="mt-3">DANH MỤC NỔI</h4>
+    <div class="container">
+        <div class="row">
+            <div class="col-3" >
+                <div class="card" style="height: 100%;">
+                    <img class="card-img-top" src="Media/GONG-KINH-01-min.jpg" alt="Card image" style="height: 150px;">
+                    <div class="card-img-overlay">
+                        
+                        <h4 class="card-title text-center  mt-5" style="color:white;">Gọng Kính</h4>
+                       <a href="#" style="text-decoration: none;"><p class="card-text text-center" style="color:white;">Xem ngay</p></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3" >
+                <div class="card" style="height: 100px;">
+                    <img class="card-img-top" src="Media/TRONG-KINH-02-min.jpg" alt="Card image" style="height: 150px;">
+                    <div class="card-img-overlay">
+                        
+                        <h4 class="card-title text-center  mt-5" style="color:white;">Tròng Kính</h4>
+                       <a href="#" style="text-decoration: none;"><p class="card-text text-center" style="color:white;">Xem ngay</p></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3" >
+                <div class="card" style="height: 100px;">
+                    <img class="card-img-top" src="Media/KINH-MAT-02-min.jpg" alt="Card image" style="height: 150px;">
+                    <div class="card-img-overlay">
+                        
+                        <h4 class="card-title text-center  mt-5" style="color:white;">Kính Mát</h4>
+                       <a href="#" style="text-decoration: none;"><p class="card-text text-center" style="color:white;">Xem ngay</p></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3" >
+                <div class="card" style="height: 100px;">
+                    <img class="card-img-top" src="Media/khuyen-mai-lawnet.jpg" alt="Card image" style="height: 150px;" >
+                    <div class="card-img-overlay">
+                        
+                        <h4 class="card-title text-center  mt-5" style="color:white;">Khuyến mãi</h4>
+                       <a href="#" style="text-decoration: none;"><p class="card-text text-center" style="color:white;">Xem ngay</p></a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 100px; ">
+        <h5 style="color: turquoise;">WHY CHOOSE? </h5>
+        <div class="row">
+            <div class="col-4">
+                <p style="font-weight: bold; font-size: large;"> VÌ SAO LỰA CHỌN KÍNH MẮT VIỆT NHẬT? </p>
+                <button type="button" class="btn btn-success">XEM CHI TIẾT</button>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width:400px; height: 180px;   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
+                    <img class="card-img-top" style="width:100px; height: 50px; margin-left:140px; margin-top: 20px;" src="Media/kinh-mat-viet-nhat-chat-luong.png" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title text-center" >Kính mắt Chất lượng</h4>
+                      <p class="card-text" style="text-align:center; ">Đa dạng sản phẩm Kính mắt của thượng hiệu cao cấp.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width:400px; height: 180px;   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
+                    <img class="card-img-top" style="width:100px; height: 50px; margin-left:140px; margin-top: 20px;" src="Media/Chi-phi-viet-nhat.png" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title text-center" >Chi phí Hợp lý</h4>
+                      <p class="card-text" style="text-align:center; ">Giá cả kính mắt phù hợp, nhiều chương trình ưu đãi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-4">
+                <div class="card" style="width:400px; height: 180px;   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
+                    <img class="card-img-top" style="width:100px; height: 50px; margin-left:140px; margin-top: 20px;" src="Media/Thiet-bi-kham-mat-viet-nhat.png"alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title text-center" >Thiết bị Tiên tiến</h4>
+                      <p class="card-text" style="text-align:center; ">Sử dụng trang thiết bị hiện đại, đo khám mắt chính xác.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width:400px; height: 180px;   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
+                    <img class="card-img-top" style="width:100px; height: 50px; margin-left:140px; margin-top: 20px;" src="Media/bac-si-kiem-tra-mien-phi-viet-nhat.png" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title text-center" >Kiểm tra mắt Miễn phí</h4>
+                      <p class="card-text" style="text-align:center; ">Sử dụng trang thiết bị hiện đại, đo khám mắt chính xác.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width:400px; height: 180px;   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
+                    <img class="card-img-top" style="width:100px; height: 50px; margin-left:140px; margin-top: 20px;" src="Media/nhan-vien-viet-nhat.png" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title text-center" >Kính mắt Chất lượng</h4>
+                      <p class="card-text" style="text-align:center; ">Đa dạng sản phẩm Kính mắt của thượng hiệu cao cấp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h4 style="color: brown; font-weight: bold; margin-top: 30px; text-align: center;"> SẢN PHẨM SALE</h4>
+        <p class="text-muted text-center">Tổng hợp những sản phẩm gọng kính & tròng kính mới nhất của Việt Nhật</p>
+        <h4 style="color:black; font-weight: bold; margin-top: 30px; text-align: center;">GỌNG KÍNH</h4>
+        <div class="row mt-3">
+            <div class="col-3">
+                <div class="card">
+                    <img class="card-img-top" src="Media/SNT958C11-C21-300x300.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title text-center">GỌNG KÍNH KIM LOẠI VELOCITY VL27106</h4>
+                      <a><p href="#" class="text-center text-danger"  style="font-weight: bold; font-size:large;" >560,000đ </p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img class="card-img-top" src="Media/SNT958C11-C21-300x300.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title text-center">GỌNG KÍNH KIM LOẠI VELOCITY VL27106</h4>
+                      <a><p href="#" class="text-center text-danger"  style="font-weight: bold; font-size:large;" >560,000đ </p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img class="card-img-top" src="Media/SNT958C11-C21-300x300.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title text-center">GỌNG KÍNH KIM LOẠI VELOCITY VL27106</h4>
+                      <a><p href="#" class="text-center text-danger"  style="font-weight: bold; font-size:large;" >560,000đ </p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img class="card-img-top" src="Media/SNT958C11-C21-300x300.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title text-center">GỌNG KÍNH KIM LOẠI VELOCITY VL27106</h4>
+                      <a><p href="#" class="text-center text-danger"  style="font-weight: bold; font-size:large;" >560,000đ </p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-3">
+                <div class="card">
+                    <img class="card-img-top" src="Media/SNT958C11-C21-300x300.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title text-center">GỌNG KÍNH KIM LOẠI VELOCITY VL27106</h4>
+                      <a><p href="#" class="text-center text-danger"  style="font-weight: bold; font-size:large;" >560,000đ </p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img class="card-img-top" src="Media/SNT958C11-C21-300x300.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title text-center">GỌNG KÍNH KIM LOẠI VELOCITY VL27106</h4>
+                      <a><p href="#" class="text-center text-danger"  style="font-weight: bold; font-size:large;" >560,000đ </p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img class="card-img-top" src="Media/SNT958C11-C21-300x300.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title text-center">GỌNG KÍNH KIM LOẠI VELOCITY VL27106</h4>
+                      <a><p href="#" class="text-center text-danger"  style="font-weight: bold; font-size:large;" >560,000đ </p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img class="card-img-top" src="Media/SNT958C11-C21-300x300.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title text-center">GỌNG KÍNH KIM LOẠI VELOCITY VL27106</h4>
+                      <a><p href="#" class="text-center text-danger"  style="font-weight: bold; font-size:large;" >560,000đ </p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h4 style="color:black; font-weight: bold; margin-top: 30px; text-align: center;">TRÒNG KÍNH</h4>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-3">
+                <div class="card">
+                    <img class="card-img-top" src="Media/SNT958C11-C21-300x300.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title text-center">GỌNG KÍNH KIM LOẠI VELOCITY VL27106</h4>
+                      <a><p href="#" class="text-center text-danger"  style="font-weight: bold; font-size:large;" >560,000đ </p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img class="card-img-top" src="Media/SNT958C11-C21-300x300.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title text-center">GỌNG KÍNH KIM LOẠI VELOCITY VL27106</h4>
+                      <a><p href="#" class="text-center text-danger"  style="font-weight: bold; font-size:large;" >560,000đ </p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img class="card-img-top" src="Media/SNT958C11-C21-300x300.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title text-center">GỌNG KÍNH KIM LOẠI VELOCITY VL27106</h4>
+                      <a><p href="#" class="text-center text-danger"  style="font-weight: bold; font-size:large;" >560,000đ </p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img class="card-img-top" src="Media/SNT958C11-C21-300x300.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title text-center">GỌNG KÍNH KIM LOẠI VELOCITY VL27106</h4>
+                      <a><p href="#" class="text-center text-danger"  style="font-weight: bold; font-size:large;" >560,000đ </p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h4 style="color:black; font-weight: bold; margin-top: 30px; text-align: center;">TIN TỨC&SỰ KIỆN</h4>
+    <p class="text-muted text-center">Tổng hợp những sản phẩm gọng kính & tròng kính mới nhất của Việt Nhật</p>
+    <div class="container d-flex justify-content-center mt-3">
+        <div class="row">
+            <div class="col-3 hover-div mx-3 " style="width: 250px;" >
+                <p class="text-center" style="font-weight: bold; ">Sau Khi Mổ Cận Mắt Có Tái Cận Không?</p>
+            </div>
+            <div class="col-3 hover-div mx-3" style="width: 250px;">
+                <p class="text-center" style="font-weight: bold; ">Cận Nặng Có Bị Mù Không?</p>
+            </div>
+            <div class="col-3 hover-div mx-3"  style="width: 250px;" >
+                <p class="text-center" style="font-weight: bold; ">Tăng Độ Nhanh Nếu Sử Dụng Kính Không Đúng Cách</p>
+            </div>
+            <div class="col-3 hover-div mx-3"  style="width: 250px;" >
+                <p class="text-center" style="font-weight: bold; ">Tăng Độ Nhanh Nếu Sử Dụng Kính Không Đúng Cách</p>
+            </div>
+        </div>
+        <br>
+   </div>
+   <div class="div d-flex justify-content-center mt-3" >
+        <button type="button" class="btn btn-success">XEM TOÀN BỘ</button>
+    </div>
+    <div id="comment">
+        <h2>ĐÁNH GIÁ CỦA KHÁCH HÀNG</h2>
+        <div id="comment-body">
+            <div class="prev_1">
+                <a href="#">
+                    <img src="Media/up.png" alt="">
+                </a>
+            </div>
+            <ul id="list-comment">
+                <li class="item">
+                    <div class="avatar">
+                        <img src="Media/avatar_1.png" alt="" style="border-radius: 55%; width: 10%;">
+    
+                    </div>
+                    <div class="stars">
+                        <span>
+                            <img src="Media/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="Media/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="Media/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="Media/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="Media/star.png" alt="">
+                        </span>
+                    </div>
+                    <div class="name">Nguyễn Đình Vũ</div>
+    
+                    <div class="text-cmt">
+                        <p>Em cảm ơn bác sĩ rất nhiều. Dù chỉ là khám bệnh từ xa nhưng bác sĩ vẫn cho em cảm giác an toàn từ 1 vị bác sĩ nhiệt tình và rất có tâm. Cảm ơn wellcare vì nhờ kênh khám bệnh từ xa này mà những người bệnh ở tỉnh xa như tụi em đang rất hoang mang ko biết khám bệnh ở đâu, ko biết tìm đâu 1 nơi mình tin tưởng tuyệt đối thì Health Care đã giúp e làm chuyện đó. Cảm ơn Health Care rất nhiều.
+                        </p>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="avatar">
+                        <img src="Media/avatar_1.png" alt="">
+    
+                    </div>
+                    <div class="stars">
+                        <span>
+                            <img src="Media/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="Media/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="Media/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="Media/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="Media/star.png" alt="">
+                        </span>
+                    </div>
+                    <div class="name">Đỗ Khánh Trâm</div>
+    
+                    <div class="text-cmt">
+                        <p>Đội ngũ hỗ trợ rất tốt, kịp thời. Bác sĩ nhiệt tình, giỏi chuyên môn, hướng dẫn và giải đáp được thắc mắc, lo âu của bệnh nhân, giúp người bệnh an tâm để điều trị.</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="avatar">
+                        <img src="Media/avatar_1.png" alt="" style="border-radius: 55%; width: 10%;" >
+    
+                    </div>
+                    <div class="stars">
+                        <span>
+                            <img src="Media/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="Media/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="Media/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="Media/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="Media/star.png" alt="">
+                        </span>
+                    </div>
+                    <div class="name">Trần Ngọc Sơn </div>
+    
+                    <div class="text-cmt">
+                        <p> Anh chị em nghiệp vụ của Wellcare thực sự chu đáo, tận tình đối với khách hàng- những bệnh nhân và người nhà. Cảm ơn các anh chị. Và mong hệ thống (Web) của Health Care sớm hoàn chỉnh và liên tục được cập nhật để ngày cảng thuận lợi, hiện đại hơn. Bác sĩ khám, tư vấn rất tận tình, rõ ràng, chuyên nghiệp, tác động tích cực đến người bệnh. Cảm ơn đội ngũ bác sĩ nhiều !
+                        </p>
+                    </div>
+                </li>
+                <li class="item">
+                  <div class="avatar">
+                      <img src="Media/avatar_1.png" alt="" style="border-radius: 55%; width: 10%;" >
+  
+                  </div>
+                  <div class="stars">
+                      <span>
+                          <img src="Media/star.png" alt="">
+                      </span>
+                      <span>
+                          <img src="Media/star.png" alt="">
+                      </span>
+                      <span>
+                          <img src="Media/star.png" alt="">
+                      </span>
+                      <span>
+                          <img src="Media/star.png" alt="">
+                      </span>
+                      <span>
+                          <img src="Media/star.png" alt="">
+                      </span>
+                  </div>
+                  <div class="name">Nhi </div>
+  
+                  <div class="text-cmt">
+                      <p> Bác sĩ có chuyên môn giỏi, kinh nghiệm sâu, bác tư vấn hướng dẫn rất kĩ càng, nhiệt tình và rất có tâm. Bác lại rất nhẹ nhàng, thấu hiểu. Mình cảm thấy an tâm khi gọi bác. Có nhiều hơn 5 sao mình cũng chọn hết. Cảm ơn đội ngũ Wellcare đã hỗ trợ rất tận tình.
+                      </p>
+                  </div>
+              </li>
+              <li class="item">
+                <div class="avatar">
+                    <img src="Media/avatar_1.png" alt="" style="border-radius: 55%; width: 10%;" >
+
+                </div>
+                <div class="stars">
+                    <span>
+                        <img src="Media/star.png" alt="">
+                    </span>
+                    <span>
+                        <img src="Media/star.png" alt="">
+                    </span>
+                    <span>
+                        <img src="Media/star.png" alt="">
+                    </span>
+                    <span>
+                        <img src="Media/star.png" alt="">
+                    </span>
+                    <span>
+                        <img src="Media/star.png" alt="">
+                    </span>
+                </div>
+                <div class="name"> Phạm Vũ </div>
+
+                <div class="text-cmt">
+                    <p> bác sĩ tư vấn rất tận tình, chuyên nghiệp, giải thích và cung cấp kiến thức y học dễ hiểu, giúp tôi cảm thấy thoải mái, tự tin khi được tư vấn và sử dụng thuốc cho con tôi . Chúc bác thành công trong sự nghiệp cứu người, giúp đời của mình. Cảm ơn đội ngũ csck đã hỗ trợ ak.
+                    </p>
+                </div>
+            </li>
+  
+            </ul>
+            <div class="next_1">
+                <a href="#">
+                    <img src="Media/down.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const next = document.querySelector('.next_1')
+     const prev = document.querySelector('.prev_1')
+     const comment = document.querySelector('#list-comment')
+     const commentItem = document.querySelectorAll('#list-comment .item')
+     var translateY = 0
+     var count = commentItem.length
+     
+     next.addEventListener('click', function (event) {
+       event.preventDefault()
+       if (count == 1) {
+         // Xem hết bình luận
+         return false
+       }
+       translateY += -400
+       comment.style.transform = `translateY(${translateY}px)`
+       count--
+     })
+     
+     prev.addEventListener('click', function (event) {
+       event.preventDefault()
+       if (count == 5) {
+         // Xem hết bình luận
+         return false
+       }
+       translateY += 400
+       comment.style.transform = `translateY(${translateY}px)`
+       count++
+     })
+     </script>
+        <br>
+   </div>
+   <div class="container mt-5" style="border-top: 2px solid gray ">
+       <div class="row mt-4">
+           <div class="col-4">
+               <h4 style="color:royalblue;">PHÒNG KHÁM MẮT VIỆT NHẬT</h4>
+                <p>Địa chỉ: 1048/1050 Trần Hưng Đạo, Phúc Thành, Tp. Ninh Bình, Ninh Bình.</p>
+               <p>Hotline: 097 780 67 89</p>
+               <p>Email: kinhmatvietnhat@gmail.com</p>
+               <p>Thời gian: 07:30 - 21:30</p>
+           </div>
+           <div class="col-2">
+            <h4 style="color:royalblue;">Thông Tin</h4>
+            <p>Giới Thiệu</p>
+            <p>Tin Tức</p>
+            <p>Sản Phẩm</p>
+            <p>Dịch Vụ</p>
+            <p>Liên Hệ</p>
+           </div>
+           <div class="col-3">
+            <h4 style="color:royalblue;">Dịch Vụ Khách Hàng</h4>
+            <p>Chính sách thanh toán</p>
+            <p>Chính sách vận chuyển</p>
+            <p>Chính sách bảo hành</p>
+            <p>Chính sách đổi trả</p>
+            <p>Chính sách bảo vệ thông tin</p>
+           </div>
+           <div class="col-3">
+            <h4 style="color:royalblue;">Mạng xã hội</h4>
+           </div>
+       </div>
+
+   </div>
+
+</body>
+</html>
