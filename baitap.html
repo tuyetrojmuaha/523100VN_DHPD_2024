@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .vanbanmaudo {
+            color: red;
+        }
+
+        .vanbanmauxanh {
+            color: blue;
+        }
+
+        .vanbanchudam {
+            font-size: 50px;
+            font-weight: bolder;
+        }
+
+
+        .vanbanchuxanhto {
+            color: aqua;
+            font-size: 60px;
+        }
+
+        .vbindam {
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        .bang1 {
+            width: 100%;
+            background-attachment: rgb(255, 254, 254);
+        }
+
+        body {
+            background-color: rgb(224, 233, 241);
+
+        }
+
+        .body1 {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            height: 100px;
+            background-color: black;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1ft);
+            gap: 10px;
+            width: 300px;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: rgb(233, 233, 233);
+            color: red;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .chuhoado {
+            color: red;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .chuhoadam {
+            color: rgb(10, 1, 1);
+            font-size: 40px;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        .chuhoadam1 {
+            color: rgb(10, 1, 1);
+            font-size: 20px;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        .chuhoadam2 {
+            color: rgb(10, 1, 1);
+            font-size: 18px;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        button {
+            color: white;
+            background-color: green;
+            font-size: 30px;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .menu ul {
+            background-color: rgb(200, 209, 206);
+            list-style-type: none;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .menu li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+
+        .menu ul li ul {
+            display: none;
+            text-align: left;
+        }
+
+        .menu ul li:hover {
+            color: brown;
+            background-color: pink;
+        }
+
+        .menu ul li:hover ul {
+            display: block;
+            position: absolute;
+
+        }
+
+        .menu ul li ul li {
+            display: block;
+        }
+    </style>
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table class="bang1">
+        <td><img src="media/ANH1.png" alt="" width="100px"></td>
+        <td class="vanbanmauxanh">PHÒNG KHÁM VIỆT NHẬT</td>
+        <td>
+            thời gian làm việc
+            <br>
+            <p class="vanbanmaudo">Thứ 2- CN 7:30 21:30</p>
+        </td>
+        <td>
+            Hotline<br>
+            <p class="vanbanmaudo">097 780 67 89</p>
+        </td>
+    </table>
+
+    <div class="menu">
+        <UL>
+            <Li><a href="#">HOME </a></Li>
+            <Li><a href="#">GIỚI THIỆU </a></Li>
+            <Li><a href="#">SẢN PHẨM </a>
+                <ul>
+                    <Li><a href="#">Tin trong nuoc</a></Li>
+                    <Li><a href="#">Tin quoc te</a> </Li>
+                </ul>
+            </Li>
+            <Li><a href="#">DỊCH VỤ </a>
+                <ul>
+                    <Li><a href="#">Tin trong nuoc</a></Li>
+                    <Li><a href="#">Tin quoc te</a> </Li>
+                </ul>
+            </Li>
+            <Li><a href="#">TIN TỨC</a>
+                <ul>
+                    <Li><a href="#">Tin trong nuoc</a></Li>
+                    <Li><a href="#">Tin quoc te</a> </Li>
+                </ul>
+            </Li>
+            <Li><a href="#">LIÊN HỆ</a> </Li>
+        </UL>
+    </div>
+
+    <img src="media/anh2.jpg" alt="" width="100%">
+    <br><br><br>
+    <center>
+        <table>
+            <caption>
+                <p class="vanbanchudam">Danh mục nổi bật</p>
+            </caption>
+            <td><img src="media/anh3.png" alt="" width="400px"></td>
+            <td><img src="media/anh4.jpg" alt="" width="400px"></td>
+            <td><img src="media/anh5.jpg" alt="" width="400px"></td>
+            <td><img src="media/anh6.jpg" alt="" width="400px"></td>
+
+        </table>
+    </center>
+    <P class="vanbanchuxanhto">WHY CHOOSE?</P>
+    <P class="vanbanchudam">VÌ SAO LỰA CHỌN KÍNH MẮT VIỆT NHẬT?</P>
+    <TABLE>
+        <TD>
+            <div class="grid-item">
+                <img src="media/anh3.png" alt="" width="400px">
+                <p class=" vbindam">Kinh mắt chất lượng</p>
+                <p>Đa dạng sản phẩm kính mắt của thương hiệu cao cấp</p>
+            </div>
+        </TD>
+        <TD>
+            <div class="grid-item">
+                <img src="media/anh4.jpg" alt="" width="400px">
+                <p class=" vbindam">THiết bị tiên tiến</p>
+                <p>sử dụng trang thiết bị hiện đại ,do khám mắt chính xác</p>
+        </TD>
+        <TD>
+            <div class="grid-item">
+                <img src="media/anh5.jpg" alt="" width="400px">
+                <p class=" vbindam">chi phí hợp lý</p>
+                <p>giá cả kính mắt phù hợp,nhiều chương trình ưu đãi</p>
+            </div>
+        </TD>
+        <TD>
+            <div class="grid-item">
+                <img src="media/anh6.jpg" alt="" width="400px">
+                <p class=" vbindam">Kiểm tra mắt miễn phí</p>
+                <p>đội ngũ bác sĩ nhân khoa có trình độ chyên môn cao</p>
+            </div>
+        </TD>
+        <TD>
+            <div class="grid-item">
+                <img src="media/anh3.png" alt="" width="400px">
+                <p class=" vbindam">Nhân viên nhiệt tình</p>
+                <p>sử dụng trang thiết bị hiện đại , do khám mắt chính xác</p>
+            </div>
+        </TD>
+    </TABLE>
+    </div>
+    </div>
+
+    <center>
+        <h1 class="chuhoado">SẢN PHẨM SALE</h1>
+        <p>Tổng hợp những sản phẩm gọng kính & tròng kính mới nhất của Việt Nhật</p>
+        <br><br><br><br>
+        <P class="chuhoadam">GỌNG KÍNH</P>
+    </center>
+    <table>
+        <td>
+            <div class="grid-item">
+                <img src="media/anh10.jpg" alt="" width="400px">
+                <p class=" chuhoadam1">GỌNG KÍNH KIM LOẠI</p>
+                <p class=" chuhoadam2">VELOCITY VL27106</p>
+            </div>
+        </td>
+        <td>
+            <div class="grid-item">
+                <img src="media/anh11.jpg" alt="" width="400px">
+                <p class=" chuhoadam1">GỌNG KÍNH KIM LOẠI</p>
+                <p class=" chuhoadam2">VELOCITY VL27106</p>
+            </div>
+        </td>
+        <td>
+
+            <div class="grid-item">
+                <img src="media/anh12.jpg" alt="" width="400px">
+                <p class=" chuhoadam1">GỌNG KÍNH KIM LOẠI</p>
+                <p class=" chuhoadam2">VELOCITY VL26945</p>
+            </div>
+        </td>
+        <td>
+            <div class="grid-item">
+                <img src="media/anh13.jpg" alt="" width="400px">
+                <p class=" chuhoadam1">GỌNG KÍNH KIM LOẠI</p>
+                <p class=" chuhoadam2">JONES TJ005 C1</p>
+            </div>
+        </td>
+        <td>
+            <div class="grid-item">
+                <img src="media/anh10.jpg" alt="" width="400px">
+                <p class="chuhoadam1">GỌNG KÍNH KIM LOẠI</p>
+                <p class=" chuhoadam2">M2037</p>
+            </div>
+        </td>
+    </table>
+    </div>
+    </div>
+    <BR><BR></BR></BR>
+    <center>
+        <P class="chuhoadam">TRÒNG KÍNH</P>
+        <BR><BR></BR></BR>
+
+        <TABLE>
+            <td>
+                <img src="media/anh5.jpg" alt="" width="400PX"><BR>
+                <center>
+                    <P CLASS="vanbanmaudo">1,0950,000Đ</P>
+                </center>
+            </td>
+            <td>
+                <img src="media/anh3.png" alt="" width="400PX"><BR>
+                <center>
+                    <P CLASS="vanbanmaudo">420,000Đ</P>
+                </center>
+            </td>
+            <td>
+                <img src="media/anh5.jpg" alt="" width="400PX"><BR>
+                <center>
+                    <P CLASS="vanbanmaudo">650,000Đ</P>
+                </center>
+            </td>
+
+        </TABLE>
+    </center>
+    <br><br><br>
+    <center>
+        <P class="chuhoadam">Tin tức & Sự kiện</P>
+        <p>tổn hopqj tin tức liên quan đến thời trang và mắt kính Mới và hot nhất</p>
+        <TABLE>
+            <td>
+                <div class="grid-item">
+                    <p class="chuhoadam1">SAU KHI MỔ CẬN CÓ TÁI CẬN KHÔNG</p>
+                </div>
+            </td>
+            <td>
+                <div class="grid-item">
+                    <p class="chuhoadam1">CẬN NẶNG CÓ BỊ MÙ KHÔNG</p>
+                </div>
+
+            </td>
+            <td>
+                <div class="grid-item">
+                    <p class="chuhoadam1">TĂNG ĐỘ NHANH NẾU SỬ DỤNG KÍNH KHÔNG ĐÚNG CÁCH</p>
+                </div>
+            </td>
+            <td>
+                <div class="grid-item">
+                    <p class="chuhoadam1">7 TÁC NHÂN GÂY HẠI CHO MẮT</p>
+                </div>
+            </td>
+        </TABLE>
+    </center>
+    <CENTER>
+        <button>xem toàn bộ</button>
+        <BR><BR><BR></BR></BR></BR>
+        <P class="chuhoadam"> ĐÁNH GIÁ CỦA KHÁCH HÀNG </P>
+        <BR><BR><BR></BR></BR></BR>
+    </CENTER>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Company name
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+      
+</body>
+
+</html>
