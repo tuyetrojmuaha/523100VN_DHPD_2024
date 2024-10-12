@@ -224,3 +224,222 @@ h2{
     text-align: center;
     font-style: italic;
 }
+<img src="media/anhmat3.jpg" alt="Ảnh 3" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+              <div>
+                <span style="color: rgb(50, 238, 25);">★ ★ ★ ☆ ☆</span> <!-- 3 sao -->
+              </div>
+              Anh đã đẹp trai rồi đeo kính vào còn đẹp trai hơn nữa hehe
+              <p class="chu2">Em Anh Thư - Khách Vip </p>
+            </div>
+          </div>
+          
+     </div> 
+     <div class="container mt-5" style="border-top: 2px solid gray ">
+        <div class="row mt-4">
+            <div class="col-4">
+                <h4 style="color:royalblue;">PHÒNG KHÁM MẮT VIỆT NHẬT</h4>
+                <p>Địa chỉ: 1048/1050 Trần Hưng Đạo, Phúc Thành, Tp. Ninh Bình, Ninh Bình.</p>
+                <p>Hotline: 097 780 67 89</p>
+                <p>Email: kinhmatvietnhat@gmail.com</p>
+                <p>Thời gian: 07:30 - 21:30</p>
+            </div>
+            <div class="col-2">
+             <h4 style="color:royalblue;">Thông Tin</h4>
+             <p>Giới Thiệu</p>
+             <p>Tin Tức</p>
+             <p>Sản Phẩm</p>
+             <p>Dịch Vụ</p>
+             <p>Liên Hệ</p>
+            </div>
+            <div class="col-3">
+             <h4 style="color:royalblue;">Dịch Vụ Khách Hàng</h4>
+             <p>Chính sách thanh toán</p>
+             <p>Chính sách vận chuyển</p>
+             <p>Chính sách bảo hành</p>
+             <p>Chính sách đổi trả</p>
+             <p>Chính sách bảo vệ thông tin</p>
+            </div>
+            <div class="col-3">
+             <h4 style="color:royalblue;">Mạng xã hội</h4>
+             <img src="media/anh2.jpg"alt="to"width="170px"height="120px">
+            </div>
+        </div>
+ 
+    </div>
+      <div class="nen2">
+        <h3>2023-Bản quyền thuộc công ty TNHH KÍNH MẮT VIỆT NHẬT</h3>
+        <h3>Giấy chứng nhận ĐKKD:2700821968. Cấp ngày:20-04-2016</h3>
+        <h3>Nơi cấp:Chi cục thuế khu vực Ninh Bình-Hoa Lư</h3>
+      </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
+CSS                                                                                                                                                                                                         .cart {
+    float: right;
+    color: white;
+    padding: 14px 20px;
+    background-color:  rgb(240, 118, 179);
+    padding: 10px 0;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.mauchu3{
+    text-align: center;
+    color: rgb(238, 243, 239);
+    background-color: rgb(226, 21, 21);
+}
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.photo {
+    position: relative;
+    margin: 10px;
+    text-align: center;
+}
+.img {
+    width: 300px; /* Thay đổi kích thước ảnh nếu cần */
+    height: auto;
+    border-radius: 8px;
+}
+.caption {
+    position: absolute;
+    top: 50%; /* Đặt chữ ở giữa ảnh */
+    left: 50%; /* Căn giữa */
+    transform: translate(-50%, -50%); /* Dịch chuyển để căn chính giữa */
+    color: rgb(197, 9, 65); /* Màu chữ */
+    font-size: 1.5em; /* Kích thước chữ */
+    background-color: rgba(255, 220, 220, 0.7); /* Nền tối hơn */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center; /* Căn giữa chữ */
+}
+.chu{
+    letter-spacing: 3px;
+    text-decoration: underline;
+    color: rgb(12, 250, 107);
+}
+.table2 {
+    width: 100%; /* Chiều rộng của bảng */
+    border-collapse: collapse; /* Xóa khoảng cách giữa các ô */
+    margin: 20px auto; /* Căn giữa bảng */
+}
+.table2 th,.table2 td {
+    border: 3px solid white; /* Đường viền của ô */
+    padding: 15px; /* Khoảng cách trong ô */
+    text-align: center; /* Căn giữa nội dung */
+    letter-spacing: 2px; /* Khoảng cách giữa các chữ */
+    height: 100px; /* Chiều cao cố định cho các ô */
+    width: 33.33%; /* Đặt chiều rộng cho các ô đều nhau */
+    box-shadow: 2px 2px 5px rgba(158, 15, 15, 0.3); /* Đổ bóng cho ô */
+}
+.chu4{
+    text-align: center;
+    color: red;
+}
+.chu1{
+    text-align: center;
+    color: rgb(0, 255, 72);
+}
+.chu2{
+    text-align: center;
+    color: rgb(0, 255, 72);
+}
+.table3 {
+    width: 100%; /* Chiều rộng của bảng */
+    border-collapse: collapse; /* Xóa khoảng cách giữa các ô */
+    margin: 20px auto; /* Căn giữa bảng */
+}
+.table3 th,.table3 td {
+    border: 3px solid white; /* Đường viền của ô */
+    padding: 15px; /* Khoảng cách trong ô */
+    text-align: center; /* Căn giữa nội dung */
+    letter-spacing: 2px; /* Khoảng cách giữa các chữ */
+    height: 100px; /* Chiều cao cố định cho các ô */
+    width: 25%; /* Đặt chiều rộng cho các ô đều nhau */
+    box-shadow: 2px 2px 5px rgba(158, 15, 15, 0.3); /* Đổ bóng cho ô */
+}
+.nen{
+    background-color:violet;
+}
+.container {
+    border-top: 2px solid gray;
+
+
+margin-top: 30px; /* Cách một chút với phần trên */
+    padding: 20px; /* Khoảng cách bên trong */
+}
+
+.row {
+    display: flex; /* Sử dụng Flexbox để dễ dàng căn giữa và sắp xếp */
+    justify-content: space-between; /* Tạo khoảng cách giữa các cột */
+}
+
+.col-4, .col-2, .col-3 {
+    padding: 15px; /* Khoảng cách giữa các cột */
+}
+
+h4 {
+    color: royalblue; /* Màu chữ tiêu đề */
+    margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+}
+
+p {
+    margin: 5px 0; /* Khoảng cách giữa các đoạn văn */
+}
+
+/* Thêm màu nền và một số kiểu cho phần "Mạng xã hội" */
+.col-3:last-child {
+    background-color: #f0f8ff; /* Màu nền nhạt */
+    padding: 15px; /* Padding cho phần này */
+    border-radius: 5px; /* Bo tròn góc */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Chuyển thành cột trên màn hình nhỏ */
+    }
+}
+.nen2{
+background-color: yellow;
+}
